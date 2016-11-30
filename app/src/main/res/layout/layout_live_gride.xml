@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_liwu"
+    android:background="@drawable/register_phone_bg"
+    android:layout_height="match_parent">
+    <GridView
+        android:id="@+id/grid_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="5" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@+id/grid_button"
+        android:id="@+id/ll_send"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_toLeftOf="@+id/btn_send"
+            android:id="@+id/rg_button"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:text="10"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:text="66"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:text="188"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+            <RadioButton
+                android:id="@+id/rb_4"
+                android:text="520"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+            <RadioButton
+                android:id="@+id/rb_5"
+                android:gravity="center"
+                android:text="1314"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_send"
+                android:text="送礼"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/btn_lianji"
+                android:text="连击"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/btn_send"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
